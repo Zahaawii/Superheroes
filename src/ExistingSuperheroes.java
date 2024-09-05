@@ -28,6 +28,7 @@ public class ExistingSuperheroes {
         if(userInput.equalsIgnoreCase("Yes")){
             superheroes.clear();
             System.out.println("You have cleared all superheroes");
+            superheroesDisplay();
         }
     }
 
@@ -38,9 +39,9 @@ public class ExistingSuperheroes {
         String userInput = scanner.next();
         if(userInput.equalsIgnoreCase("Yes")) {
             ConsoleStuff.displayInfo("Press the number of the superhero you want to delete");
-            superheroes.remove(scanner.nextInt());
-            ConsoleStuff.displayInfo("You have removed your superhero");
-//           for (int i = 0; 0 <= superheroes.get(i); i++)
+            int userDeleteSuperHero = scanner.nextInt();
+            ConsoleStuff.displayInfo("You have removed your superhero: " + superheroes.get(userDeleteSuperHero));
+            superheroes.remove(userDeleteSuperHero);
         }
     }
 
@@ -98,7 +99,8 @@ public class ExistingSuperheroes {
     public static void existingSuperheroDecision() {
         superheroesDisplay();
         existingSuperheroUserDecision();
-        clearSuperhero();
         deleteASuperHero();
+        clearSuperhero();
+
     }
 }
