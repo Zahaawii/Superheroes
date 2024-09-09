@@ -38,6 +38,7 @@ public class MakeYourOwnSuperHero {
         userChoiceToRemoveAnyAttributes();
         userChoiceToClearAttributes();
         seeYourSuperHero();
+        startOver.startover(true);
     }
 
     public static void clearSuperheroAttributes() {

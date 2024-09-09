@@ -28,7 +28,6 @@ public class ExistingSuperheroes {
         if(userInput.equalsIgnoreCase("Yes")){
             superheroes.clear();
             System.out.println("You have cleared all superheroes");
-            superheroesDisplay();
         }
     }
 
@@ -101,6 +100,7 @@ public class ExistingSuperheroes {
         existingSuperheroUserDecision();
         deleteASuperHero();
         clearSuperhero();
+        startOver.startover(true);
 
     }
 }

@@ -6,7 +6,7 @@ public class UserDecision {
     static int userInput;
 
     public static void UserChoice() {
-        UserChoiceDecision("Velkommen til Superhelte for rookies", "Du har følgende valg: \n1: For at se superhelte. \n2: For at lave din egen superhelt \n3: Slette en superhero");
+        UserChoiceDecision("Velkommen til Superhelte for rookies", "Du har følgende valg: \n1: For at se superhelte. \n2: For at lave din egen superhelt \n3: Søg en superhero");
 
         do {
             try {
@@ -28,7 +28,9 @@ public class UserDecision {
         }
 
         if(userInput == 3) {
-            System.out.println("Du har valgt at slette superhelte");
+            System.out.println("Du har valgt at søge efter en superhelt");
+            SearchSuperheroes.finalSearch();
+
         }
     }
 
